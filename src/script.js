@@ -303,7 +303,7 @@ form.addEventListener('submit', function (e) {
         };
         localStorage.setItem('users', JSON.stringify(users));
         localStorage.setItem('loggedInUser', username);
-        window.location.href = 'index.html';
+        window.location.href = 'mypage.html';
     } else {
         if (!users[username] || users[username].password !== password) {
             alert("Invalid username or password.");
@@ -311,7 +311,7 @@ form.addEventListener('submit', function (e) {
         }
 
         localStorage.setItem('loggedInUser', username);
-        window.location.href = 'index.html';
+        window.location.href = 'mypage.html';
     }
 });
 
